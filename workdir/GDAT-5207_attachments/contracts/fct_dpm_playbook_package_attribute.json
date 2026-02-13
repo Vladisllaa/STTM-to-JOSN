@@ -1,0 +1,261 @@
+{
+  "entityCode": "FCT_OTHERTEMP_FCT_DPM_PLAYBOOK_PACKAGE_ATTRIBUTE",
+  "entityName": "fct_dpm_playbook_package_attribute",
+  "entityDescription": "The gold_othertemp.fct_dpm_playbook_package_attribute experience table.",
+  "destinationSchema": "GOLD_OTHERTEMP",
+  "isEnabled": true,
+  "ingestionGroups": [
+    "COINS_INGEST"
+  ],
+  "debugIngestionGroups": [
+    "DEBUG_COINS_INGEST"
+  ],
+  "clusterName": "gdp2-lakehouse-compute",
+  "notebookPath": "/Workspace/Shared/Data Platform/GOLD/OTHERTEMP/transform_fct_dpm_playbook_package_attribute",
+  "businessDomain": "OTHERTEMP",
+  "failIfSingleInvalidDetected": false,
+  "dependencies": [
+    ""
+  ],
+  "columns": [
+    {
+      "columnName": "fct_dpm_playbook_package_attribute_key",
+      "typeName": "bigint",
+      "isNullable": false,
+      "isPrimaryKey": true,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "workspace_id",
+      "typeName": "big int",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "playbook_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "package_unique_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "attribute_unique_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "gate_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "discipline_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "package_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "package_title",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "playbook_package_attribute_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "playbook_package_attribute_name",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "playbook_package_attribute_control",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "playbook_package_attribute_required",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 10
+    },
+    {
+      "columnName": "workspace_attribute_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "workspace_attribute_name",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "attribute_value_key_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "attribute_value",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "modified_on",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "modified_by",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "attribute_value_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "load_date",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "snapshot_date",
+      "typeName": "date",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": true,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "contract_cd",
+      "typeName": "string",
+      "isBusinessKey": false,
+      "isPrimaryKey": false,
+      "isType1SCD": true,
+      "isType2SCD": false,
+      "isNullable": true,
+      "securityClassification": "Internal"
+    }
+  ]
+}

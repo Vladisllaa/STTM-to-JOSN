@@ -1,0 +1,17 @@
+SELECT
+CAST(REVISION_ID AS BIGINT) AS revision_id,
+CAST(ATTRIBUTE_NAME AS STRING) AS attribute_name,
+CAST(ATTRIBUTE_VALUE AS STRING) AS attribute_value,
+CAST(DIRECT_LINK AS STRING) AS direct_link,
+CAST(DOC_REF AS STRING) AS doc_ref,
+CAST(FOLDER_ID AS BIGINT) AS folder_id,
+CAST(PROJECT_ID AS BIGINT) AS project_id,
+CAST(REV_NO AS STRING) AS rev_no,
+CAST(WORKSPACE_ID AS BIGINT) AS workspace_id,
+CAST(ATTRIBUTE_ID AS STRING) AS attribute_id,
+CAST(ATTRIBUTE_VALUE_ID AS STRING) AS attribute_value_id,
+CAST(LOAD_DATE AS TIMESTAMP) AS load_date,
+CAST(curdate() AS DATE) AS snapshot_date,
+CAST(null AS STRING) AS contract_cd
+FROM
+dpm_document_attribute

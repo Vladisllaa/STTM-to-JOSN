@@ -1,0 +1,148 @@
+{
+  "entityCode": "FCT_OTHERTEMP_FCT_DPM_PLAYBOOK_TASK_ASSC_FORM",
+  "entityName": "fct_dpm_playbook_task_assc_form",
+  "entityDescription": "The gold_othertemp.fct_dpm_playbook_task_assc_form experience table.",
+  "destinationSchema": "GOLD_OTHERTEMP",
+  "isEnabled": true,
+  "ingestionGroups": [
+    "COINS_INGEST"
+  ],
+  "debugIngestionGroups": [
+    "DEBUG_COINS_INGEST"
+  ],
+  "clusterName": "gdp2-lakehouse-compute",
+  "notebookPath": "/Workspace/Shared/Data Platform/GOLD/OTHERTEMP/transform_fct_dpm_playbook_task_assc_form",
+  "businessDomain": "OTHERTEMP",
+  "failIfSingleInvalidDetected": false,
+  "dependencies": [
+    ""
+  ],
+  "columns": [
+    {
+      "columnName": "fct_dpm_playbook_task_assc_form_key",
+      "typeName": "bigint",
+      "isNullable": false,
+      "isPrimaryKey": true,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "workspace_id",
+      "typeName": "big int",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "playbook_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "task_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "form_placeholder_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "form_id",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "form_type",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "form_due_date",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "form_status",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "load_date",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "snapshot_date",
+      "typeName": "date",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": true,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "contract_cd",
+      "typeName": "string",
+      "isBusinessKey": false,
+      "isPrimaryKey": false,
+      "isType1SCD": true,
+      "isType2SCD": false,
+      "isNullable": true,
+      "securityClassification": "Internal"
+    }
+  ]
+}

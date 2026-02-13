@@ -1,0 +1,488 @@
+{
+  "entityCode": "FCT_OTHERTEMP_FCT_DPM_FORM_QUALITY_GRADING",
+  "entityName": "fct_dpm_form_quality_grading",
+  "entityDescription": "The gold_othertemp.fct_dpm_form_quality_grading experience table.",
+  "destinationSchema": "GOLD_OTHERTEMP",
+  "isEnabled": true,
+  "ingestionGroups": [
+    "COINS_INGEST"
+  ],
+  "debugIngestionGroups": [
+    "DEBUG_COINS_INGEST"
+  ],
+  "clusterName": "gdp2-lakehouse-compute",
+  "notebookPath": "/Workspace/Shared/Data Platform/GOLD/OTHERTEMP/transform_fct_dpm_form_quality_grading",
+  "businessDomain": "OTHERTEMP",
+  "failIfSingleInvalidDetected": false,
+  "dependencies": [
+    ""
+  ],
+  "columns": [
+    {
+      "columnName": "fct_dpm_form_quality_grading_key",
+      "typeName": "bigint",
+      "isNullable": false,
+      "isPrimaryKey": true,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "project_id",
+      "typeName": "big int",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "form_id",
+      "typeName": "big int",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "creation_date",
+      "typeName": "datetime",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "project_name",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "originator_user_name",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "originator_org",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "role_evaluation",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "evaluation_year",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 4
+    },
+    {
+      "columnName": "evaluation_month",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 15
+    },
+    {
+      "columnName": "collaboration_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "collaboration_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "collaboration_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "communication_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "communication_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "communication_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "digital_capability_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "digital_capability_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "digital_capability_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "engineered_safety_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "engineered_safety_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "engineered_safety_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "quality_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "quality_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "quality_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "response_time_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "response_time_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "response_time_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "sustainability_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "sustainability_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "sustainability_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "team_leadership_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "team_leadership_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "team_leadership_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "technical_expertise_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "technical_expertise_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "technical_expertise_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "visibilty_score",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "visibilty_comment",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 2000
+    },
+    {
+      "columnName": "visibilty_ip",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "load_date",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "snapshot_date",
+      "typeName": "date",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": true,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "contract_cd",
+      "typeName": "string",
+      "isBusinessKey": false,
+      "isPrimaryKey": false,
+      "isType1SCD": true,
+      "isType2SCD": false,
+      "isNullable": true,
+      "securityClassification": "Internal"
+    }
+  ]
+}

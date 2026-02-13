@@ -1,0 +1,243 @@
+{
+  "entityCode": "DIM_OTHERTEMP_DIM_DPM_PLAYBOOK_TASK",
+  "entityName": "dim_dpm_playbook_task",
+  "entityDescription": "The gold_othertemp.dim_dpm_playbook_task experience table.",
+  "destinationSchema": "GOLD_OTHERTEMP",
+  "isEnabled": true,
+  "ingestionGroups": [
+    "COINS_INGEST"
+  ],
+  "debugIngestionGroups": [
+    "DEBUG_COINS_INGEST"
+  ],
+  "clusterName": "gdp2-lakehouse-compute",
+  "notebookPath": "/Workspace/Shared/Data Platform/GOLD/OTHERTEMP/transform_dim_dpm_playbook_task",
+  "businessDomain": "OTHERTEMP",
+  "failIfSingleInvalidDetected": false,
+  "dependencies": [
+    ""
+  ],
+  "columns": [
+    {
+      "columnName": "dim_dpm_playbook_task_key",
+      "typeName": "bigint",
+      "isNullable": false,
+      "isPrimaryKey": true,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "workspace_id",
+      "typeName": "big int",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "playbook_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "task_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "package_unique_id",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal",
+      "typeLength": 50
+    },
+    {
+      "columnName": "package_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "task_title",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal",
+      "typeLength": 200
+    },
+    {
+      "columnName": "task_start_date",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "task_due_date",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "task_description",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal",
+      "typeLength": 500
+    },
+    {
+      "columnName": "task_status",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "modified_on",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "mdified_by_user",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "modified_by_organisation",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "task_assigned_to",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "package_progress_percentage",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "package_progress_number",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "gate_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "discipline_id",
+      "typeName": "int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "load_date",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": true,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "snapshot_date",
+      "typeName": "date",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "entityCode": "FCT_OTHERTEMP_FCT_DPM_PLAYBOOK_TASK_ASSC_DOC",
+  "entityName": "fct_dpm_playbook_task_assc_doc",
+  "entityDescription": "The gold_othertemp.fct_dpm_playbook_task_assc_doc experience table.",
+  "destinationSchema": "GOLD_OTHERTEMP",
+  "isEnabled": true,
+  "ingestionGroups": [
+    "COINS_INGEST"
+  ],
+  "debugIngestionGroups": [
+    "DEBUG_COINS_INGEST"
+  ],
+  "clusterName": "gdp2-lakehouse-compute",
+  "notebookPath": "/Workspace/Shared/Data Platform/GOLD/OTHERTEMP/transform_fct_dpm_playbook_task_assc_doc",
+  "businessDomain": "OTHERTEMP",
+  "failIfSingleInvalidDetected": false,
+  "dependencies": [
+    ""
+  ],
+  "columns": [
+    {
+      "columnName": "fct_dpm_playbook_task_assc_doc_key",
+      "typeName": "bigint",
+      "isNullable": false,
+      "isPrimaryKey": true,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "workspace_id",
+      "typeName": "big int",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "playbook_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "task_id",
+      "typeName": "varchar",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 30
+    },
+    {
+      "columnName": "document_revision_id",
+      "typeName": "big int",
+      "isNullable": false,
+      "isPrimaryKey": false,
+      "isBusinessKey": true,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "document_folder_id",
+      "typeName": "big int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "document_id",
+      "typeName": "big int",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "document_reference",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 100
+    },
+    {
+      "columnName": "document_title",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 500
+    },
+    {
+      "columnName": "is_complete",
+      "typeName": "varchar",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal",
+      "typeLength": 10
+    },
+    {
+      "columnName": "load_date",
+      "typeName": "datetime",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": false,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "snapshot_date",
+      "typeName": "date",
+      "isNullable": true,
+      "isPrimaryKey": false,
+      "isBusinessKey": false,
+      "isType1SCD": true,
+      "isType2SCD": false,
+      "securityClassification": "Internal"
+    },
+    {
+      "columnName": "contract_cd",
+      "typeName": "string",
+      "isBusinessKey": false,
+      "isPrimaryKey": false,
+      "isType1SCD": true,
+      "isType2SCD": false,
+      "isNullable": true,
+      "securityClassification": "Internal"
+    }
+  ]
+}

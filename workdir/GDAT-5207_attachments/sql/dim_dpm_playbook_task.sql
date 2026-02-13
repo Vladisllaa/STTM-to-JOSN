@@ -1,0 +1,23 @@
+SELECT
+CAST(WORKSPACE_ID AS BIGINT) AS workspace_id,
+CAST(PLAYBOOK_ID AS STRING) AS playbook_id,
+CAST(TASK_ID AS STRING) AS task_id,
+CAST(PACKAGE_UNIQUE_ID AS STRING) AS package_unique_id,
+CAST(PACKAGE_ID AS INT) AS package_id,
+CAST(TASK_TITLE AS STRING) AS task_title,
+CAST(TASK_START_DATE AS TIMESTAMP) AS task_start_date,
+CAST(TASK_DUE_DATE AS TIMESTAMP) AS task_due_date,
+CAST(TASK_DESCRIPTION AS STRING) AS task_description,
+CAST(TASK_STATUS AS STRING) AS task_status,
+CAST(MODIFIED_ON AS TIMESTAMP) AS modified_on,
+CAST(MDIFIED_BY_USER AS STRING) AS mdified_by_user,
+CAST(MODIFIED_BY_ORGANISATION AS STRING) AS modified_by_organisation,
+CAST(TASK_ASSIGNED_TO AS STRING) AS task_assigned_to,
+CAST(PACKAGE_PROGRESS_PERCENTAGE AS INT) AS package_progress_percentage,
+CAST(PACKAGE_PROGRESS_NUMBER AS STRING) AS package_progress_number,
+CAST(GATE_ID AS INT) AS gate_id,
+CAST(DISCIPLINE_ID AS INT) AS discipline_id,
+CAST(LOAD_DATE AS STRING) AS load_date,
+CAST(curdate() AS DATE) AS snapshot_date
+FROM
+dpm_playbook_task

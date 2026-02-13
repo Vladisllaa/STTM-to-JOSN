@@ -1,0 +1,25 @@
+SELECT
+CAST(WORKSPACE_ID AS BIGINT) AS workspace_id,
+CAST(PLAYBOOK_ID AS STRING) AS playbook_id,
+CAST(PACKAGE_UNIQUE_ID AS STRING) AS package_unique_id,
+CAST(ATTRIBUTE_UNIQUE_ID AS STRING) AS attribute_unique_id,
+CAST(GATE_ID AS INT) AS gate_id,
+CAST(DISCIPLINE_ID AS INT) AS discipline_id,
+CAST(PACKAGE_ID AS INT) AS package_id,
+CAST(PACKAGE_TITLE AS STRING) AS package_title,
+CAST(PLAYBOOK_PACKAGE_ATTRIBUTE_ID AS INT) AS playbook_package_attribute_id,
+CAST(PLAYBOOK_PACKAGE_ATTRIBUTE_NAME AS STRING) AS playbook_package_attribute_name,
+CAST(PLAYBOOK_PACKAGE_ATTRIBUTE_CONTROL AS STRING) AS playbook_package_attribute_control,
+CAST(PLAYBOOK_PACKAGE_ATTRIBUTE_REQUIRED AS STRING) AS playbook_package_attribute_required,
+CAST(WORKSPACE_ATTRIBUTE_ID AS INT) AS workspace_attribute_id,
+CAST(WORKSPACE_ATTRIBUTE_NAME AS STRING) AS workspace_attribute_name,
+CAST(ATTRIBUTE_VALUE_KEY_ID AS INT) AS attribute_value_key_id,
+CAST(ATTRIBUTE_VALUE AS STRING) AS attribute_value,
+CAST(MODIFIED_ON AS TIMESTAMP) AS modified_on,
+CAST(MODIFIED_BY AS TIMESTAMP) AS modified_by,
+CAST(ATTRIBUTE_VALUE_ID AS INT) AS attribute_value_id,
+CAST(LOAD_DATE AS TIMESTAMP) AS load_date,
+CAST(curdate() AS DATE) AS snapshot_date,
+CAST(null AS STRING) AS contract_cd
+FROM
+dpm_playbook_package_attribute

@@ -1,0 +1,19 @@
+SELECT
+CAST(PROJECT_ID AS BIGINT) AS project_id,
+CAST(FORM_ID AS STRING) AS form_id,
+CAST(WEEK_COMMENCING AS TIMESTAMP) AS week_commencing,
+CAST(FORM_TYPE_NAME AS STRING) AS form_type_name,
+CAST(PROJECT_NAME AS BIGINT) AS project_name,
+CAST(FORM_TYPE_ID AS STRING) AS form_type_id,
+CAST(ROLE AS STRING) AS role,
+CAST(DESIGN_STAGE AS STRING) AS design_stage,
+CAST(EXPENDITURE_IN_WEEK AS INT) AS expenditure_in_week,
+CAST(COMMENTS AS STRING) AS comments,
+CAST(POPULATED_BY AS STRING) AS populated_by,
+CAST(FORM_CREATION_DATE AS TIMESTAMP) AS form_creation_date,
+CAST(LAST_EDITED_DATE AS TIMESTAMP) AS last_edited_date,
+CAST(LOAD_DATE AS TIMESTAMP) AS load_date,
+CAST(curdate() AS DATE) AS snapshot_date,
+CAST(null AS STRING) AS contract_cd
+FROM
+dpm_form_expenditure

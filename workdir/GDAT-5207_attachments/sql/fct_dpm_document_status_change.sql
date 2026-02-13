@@ -1,0 +1,28 @@
+SELECT
+CAST(REVISION_ID AS BIGINT) AS revision_id,
+CAST(STATUS_CHANGED_DATE AS TIMESTAMP) AS status_changed_date,
+CAST(OLD_STATUS AS STRING) AS old_status,
+CAST(NEW_STATUS AS STRING) AS new_status,
+CAST(DAYS_SINCE_STATUS_CHANGE AS INT) AS days_since_status_change,
+CAST(PROJECT_NAME AS STRING) AS project_name,
+CAST(DOC_REF AS STRING) AS doc_ref,
+CAST(FILE_NAME AS STRING) AS file_name,
+CAST(DOC_TITLE AS STRING) AS doc_title,
+CAST(DOC_POI AS STRING) AS doc_poi,
+CAST(ISSUE_NO AS INT) AS issue_no,
+CAST(REV_NO AS STRING) AS rev_no,
+CAST(PUBLISH_DATE AS TIMESTAMP) AS publish_date,
+CAST(PUBLISHER_USER AS STRING) AS publisher_user,
+CAST(PUBLISHER_ORG AS STRING) AS publisher_org,
+CAST(STATUS_CHANGED_BY_USER AS STRING) AS status_changed_by_user,
+CAST(STATUS_CHANGED_BY_ORG AS STRING) AS status_changed_by_org,
+CAST(REASON_FOR_STATUS_CHANGE AS STRING) AS reason_for_status_change,
+CAST(URL AS STRING) AS url,
+CAST(IS_ACTIVE AS STRING) AS is_active,
+CAST(IS_LATEST AS STRING) AS is_latest,
+CAST(IS_READ AS STRING) AS is_read,
+CAST(LOAD_DATE AS TIMESTAMP) AS load_date,
+CAST(curdate() AS DATE) AS snapshot_date,
+CAST(null AS STRING) AS contract_cd
+FROM
+dpm_document_status_change
